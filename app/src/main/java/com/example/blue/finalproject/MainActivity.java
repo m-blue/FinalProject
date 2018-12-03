@@ -1,5 +1,6 @@
 package com.example.blue.finalproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     toast.makeText(MainActivity.this, "Incorrect Password",Toast.LENGTH_LONG).show();
                 }
                 else {
+                    startActivity(new Intent(MainActivity.this, MainClassList.class));
                     toast.makeText(MainActivity.this, "Login Successful",Toast.LENGTH_LONG).show();
                 }
             }

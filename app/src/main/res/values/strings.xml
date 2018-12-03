@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">FinalProject</string>
+    <string name="cert">Certificate</string>
+    <string name="assoc">Associates</string>
+    <string-array name="txtGroup">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>June</item>
+        <item>July</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="lstCert">
+        <item>Android Certificate</item>
+        <item>iOS Mobile Certificate</item>
+    </string-array>
+
+    <string-array name="lstMajor">
+        <item>Digital Media</item>
+        <item>Mobile Application</item>
+    </string-array>
 </resources>
