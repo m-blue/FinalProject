@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spnMonth"
         android:layout_width="116dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
@@ -110,8 +110,8 @@
         android:ems="10"
         android:hint="Day"
         android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/spinner"
-        app:layout_constraintTop_toTopOf="@+id/spinner" />
+        app:layout_constraintStart_toEndOf="@+id/spnMonth"
+        app:layout_constraintTop_toTopOf="@+id/spnMonth" />
 
     <EditText
         android:id="@+id/txtYear"
@@ -166,6 +166,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
         android:entries="@array/lstCert"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swCertAssoc" />
 
@@ -197,6 +198,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:text="Certificate"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spnCert" />
 

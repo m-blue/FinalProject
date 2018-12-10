@@ -28,8 +28,9 @@ public class MainClassList extends AppCompatActivity {
         final EditText txtFirstName = findViewById(R.id.txtFirstName);
         final EditText txtLastName  = findViewById(R.id.txtLastName);
         final EditText txtPhone  = findViewById(R.id.txtPhone);
-        EditText txtDay  = findViewById(R.id.txtDay);
-        EditText txtYear  = findViewById(R.id.txtYear);
+        final Spinner spnMonth = findViewById(R.id.spnMonth);
+        final EditText txtDay  = findViewById(R.id.txtDay);
+        final EditText txtYear  = findViewById(R.id.txtYear);
 
         swCertAssoc.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -57,7 +58,8 @@ public class MainClassList extends AppCompatActivity {
                     nextScreen.putExtra("txtFirstName", txtFirstName.getText().toString());
                     nextScreen.putExtra("txtLastName", txtLastName.getText().toString());
                     nextScreen.putExtra("txtPhone", txtPhone.getText().toString());
-                    nextScreen.putExtra("txtFirstName", txtFirstName.getText().toString());
+                    String birthDate = spnMonth.getSelectedItem().toString() + " " + txtDay.getText().toString() + " " + txtYear.getText().toString();
+                    nextScreen.putExtra("txtBirthDate", birthDate.toString());
 
                     if(spnCert.getVisibility() == View.VISIBLE){
                         nextScreen.putExtra("isDegreeCert","Degree");
